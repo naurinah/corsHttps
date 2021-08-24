@@ -1,0 +1,64 @@
+.footer {
+  padding: 1.5rem;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .ul li {
+  margin-right: 2rem;
+  color: #6f727d;
+  cursor: pointer;
+}
+
+.footer .copy {
+  font-size: .9rem;
+  color: #a9a9aa;
+}
+
+.footer .copy a {
+  color: #0047ba;
+}
+
+.footer .copy a:hover {
+  color: #007bff;
+}
+
+@media (max-width: 680px) {
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer ul {
+    margin-bottom: 1rem;
+  }
+  .footer ul li:last-child {
+    margin-right: 0rem;
+  }
+  .footer .copy {
+    font-size: 0.8rem;
+  }
+}
+/*# sourceMappingURL=Footer.module.css.map */

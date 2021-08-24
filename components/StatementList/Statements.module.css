@@ -1,0 +1,76 @@
+.StatementList {
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 2px 0px #a6a6a6;
+          box-shadow: 0px 0px 2px 0px #a6a6a6;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.StatementList .top {
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.StatementList .top h2 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #3f4047;
+}
+
+.StatementList .shipment .table {
+  margin-top: 1rem;
+  padding: 0rem 2rem 2rem 2rem;
+}
+
+.search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2rem;
+}
+
+.search .searchBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.search .right button {
+  padding: .35rem 1.25rem;
+  font-size: .875rem;
+  line-height: 1.5;
+  border-radius: .2rem;
+  border: 1px solid #dedfe4;
+  background-color: white;
+  margin: 0.2rem;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+.search .right button:hover {
+  background-color: #ebedf2;
+}
+
+.search .right button:focus {
+  outline: none;
+}
+/*# sourceMappingURL=Statements.module.css.map */

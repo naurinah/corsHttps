@@ -1,0 +1,30 @@
+.pickupCard {
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 2px 0px #a6a6a6;
+          box-shadow: 0px 0px 2px 0px #a6a6a6;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-bottom: 2rem;
+}
+
+.pickupCard .top {
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.pickupCard .top h2 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #3f4047;
+}
+/*# sourceMappingURL=PickupCard.module.css.map */

@@ -1,0 +1,24 @@
+.profile {
+    
+    .page {
+        display: flex;
+        width: 100%;
+        .pageRight {
+            flex: 1;
+            position: relative;
+
+            main {
+                padding: 1.5rem 1.2rem;
+                margin-bottom: 4rem;
+    
+                .heading {
+                    margin: 0 0 2rem 0;
+                    font-family: 'Roboto', sans-serif;
+                    font-size: 1.55rem;
+                    font-weight: 500;
+                    color: #3f4047;
+                }
+            }
+        }
+    }
+}

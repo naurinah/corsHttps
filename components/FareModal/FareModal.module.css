@@ -1,0 +1,83 @@
+.heading {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.desc .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.desc .row .col {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.desc .row .col label {
+  width: 8rem;
+  margin-right: 1rem;
+}
+
+.desc .row .col select,
+.desc .row .col input {
+  width: 100%;
+  padding: 0.25rem 1rem;
+  font-size: 1rem;
+  line-height: 28px;
+  min-height: 37px;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+
+.desc .row .col select:focus, .desc .row .col input:focus {
+  outline: none;
+  -webkit-box-shadow: 0 0 3px #0047ba;
+          box-shadow: 0 0 3px #0047ba;
+}
+
+.desc .row button {
+  background-color: #0047ba;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: .35rem 1.25rem;
+  font-size: .875rem;
+  line-height: 1.5;
+  border-radius: .2rem;
+}
+
+.desc .row button:focus {
+  outline: none;
+}
+/*# sourceMappingURL=FareModal.module.css.map */

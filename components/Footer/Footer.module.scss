@@ -1,0 +1,50 @@
+.footer {
+    padding: 1.5rem;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    .ul {
+        display: flex;
+        list-style: none;
+        align-items: center;
+        
+        li {
+            margin-right: 2rem;
+            color: #6f727d;
+            cursor: pointer;
+        }
+        
+    }
+    .copy {
+        font-size: .9rem;
+        color: #a9a9aa;
+
+        a {
+            color: #0047ba;
+        }
+        a:hover {
+            color: #007bff;
+        }
+    }
+}
+
+@media(max-width: 680px) {
+    
+    .footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        ul {
+            margin-bottom: 1rem;
+            li:last-child {
+                margin-right: 0rem;
+            }
+        }
+        .copy {
+            font-size: 0.8rem;
+        }
+    }
+}

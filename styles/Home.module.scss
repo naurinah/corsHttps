@@ -1,0 +1,116 @@
+.main {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+
+    .left {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: white;
+
+        img {
+            max-width: 150px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .incorrect {
+                border: 1px solid #f4516c;
+                color: #f4516c;
+                display: flex;
+                width: 22rem;
+                font-size: 0.8rem;
+                padding: 1rem;
+                border-radius: 5px;
+                margin-top: 1.5rem;
+            }
+            .required {
+                align-self: flex-start;
+                margin-left: 2rem;
+                font-size: 0.8rem;
+                color: #f4516c;
+            }
+            input {
+                border: none;
+                border-radius: 40px;
+                border: none;
+                padding: 1rem 1.5rem;
+                margin-top: 1.5rem;
+                color: #91899f;
+                background: #f7f6f9;
+                font-size: 1rem;
+                width: 22rem;
+            }
+            input:focus {
+                outline: none;
+            }
+            .password {
+                display: flex;
+                align-items: center;
+                position: relative;
+               
+            }
+            .forget {
+                font-weight: 600px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 2rem 1.5rem;
+                font-weight: 700px; 
+
+                span {
+                    display: block;
+                    color: #0047ba;
+                }
+            }
+            button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: none;
+                background-color: #0047ba;
+                color: white;
+                padding: 1.4rem 4rem;
+                cursor: pointer;
+                border-radius: 60px;
+                font-size: 1rem;
+            }
+            button:hover {
+                background-color: #133ba0;
+            }
+            button:focus {
+                outline: none;
+            }
+        }
+    }
+    .right {
+        flex: 1.5;
+        background-image: url('/app-login-img.jpg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+@media(max-width: 900px){
+    .main {
+        .right {
+            display: none;
+        }
+        .left {
+            form {
+                .incorrect,
+                input {
+                    width: 20rem;
+                }
+            }
+        }
+    }
+}

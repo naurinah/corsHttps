@@ -1,0 +1,72 @@
+.apiDetail {
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 2px 0px #a6a6a6;
+          box-shadow: 0px 0px 2px 0px #a6a6a6;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.apiDetail .top {
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.apiDetail .top h2 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #3f4047;
+}
+
+.apiDetail .shipment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.apiDetail .shipment .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.5rem 0;
+  -webkit-box-shadow: 0px 0px 2px 0px #a6a6a6;
+          box-shadow: 0px 0px 2px 0px #a6a6a6;
+  min-width: 18rem;
+  margin: 1rem;
+}
+
+.apiDetail .shipment .disabled {
+  background-color: #f7f7f7;
+  border: 1px solid #f7f7f7;
+}
+
+.apiDetail .shipment .disabled img {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  opacity: 0.5;
+}
+/*# sourceMappingURL=ApiDetail.module.css.map */

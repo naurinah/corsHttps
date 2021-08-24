@@ -1,0 +1,148 @@
+.version {
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 2px 0px #a6a6a6;
+          box-shadow: 0px 0px 2px 0px #a6a6a6;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-bottom: 2rem;
+}
+
+.version .top {
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.version .top h2 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #3f4047;
+}
+
+.version .top button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.3rem 1rem;
+  font-size: 0.9rem;
+  border: none;
+  color: white;
+  background-color: #c4c5d6;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  border-radius: 5px;
+}
+
+.version .top button:hover {
+  background-color: #afafaf;
+}
+
+.version .top button:focus {
+  outline: none;
+}
+
+.version .data {
+  color: #575962;
+  padding: 2.2rem;
+}
+
+.version .data .info {
+  background-color: #F66E84;
+  color: white;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.version .addUser {
+  margin: 2rem;
+  -webkit-box-shadow: 0px 0px 2px 0px #a6a6a6;
+          box-shadow: 0px 0px 2px 0px #a6a6a6;
+}
+
+.version .addUser label {
+  width: 12rem;
+  font-size: 0.9rem;
+}
+
+.version .addUser input, .version .addUser select {
+  border: 1px solid #ebedf2;
+  color: #575962;
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.version .addUser input:focus, .version .addUser select:focus {
+  outline: 1px solid #0047ba;
+}
+
+.version .addUser .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.version .addUser .row button {
+  padding: 1rem 1.5rem;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: #0047ba;
+}
+
+.version .addUser .row .col {
+  padding: 1rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.version .addUser .topRow {
+  margin-top: 2rem;
+}
+
+.version .addUser .buttonRow {
+  margin: 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.version .addUser .buttonRow button {
+  margin-bottom: 2rem;
+}
+/*# sourceMappingURL=UserListCard.module.css.map */

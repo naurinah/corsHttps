@@ -1,0 +1,64 @@
+.GuideCard {
+    background-color: white;
+    box-shadow: 0px 0px 2px 0px rgba(166,166,166,1);
+    flex: 1;
+    margin-bottom: 2rem;
+
+    .top {
+        padding: 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid rgb(223, 223, 223);
+
+        h2 {
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: #3f4047;
+        }
+    }
+
+    .data {
+        color: #575962;
+        padding: 2.2rem;
+        display: flex;
+
+        p {
+            font-weight: 500;
+        }
+        ul {
+            margin: 1rem 0;
+            margin-left: 3rem;
+            color: #575962;
+
+            li {
+                font-size: 0.9rem;
+            }
+        }
+
+        .text {
+            flex: 1.5;
+            font-size: 0.9rem;
+            margin-right: 2rem;
+        }
+        .image {
+            flex: 1;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media(max-width: 750px){
+    .GuideCard {
+        .data {
+            flex-direction: column;
+
+            .text {
+                margin-bottom: 1rem;
+            }
+        } 
+    }
+}

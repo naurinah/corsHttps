@@ -1,0 +1,110 @@
+Header:
+logo-hover on click and cursor pointer
+sandwich icon not available and click to drag sidebar
+
+Header Taskbar:
+font size,color,padding issue.
+
+Header Icon:
+3 icons-bell,share,profile icone change,tooltip not available
+onclick red spot add
+notification,share,profile box styling
+
+Create Shipment
+all page font-size and color will be change
+Customer Details on Service  field dropdown bluetrunk
+
+Shipper Details
+Pickup Location dropdown missing
+
+Shipment Options
+Services *COD button cursor:pointer
+
+Document
+Parcel display-flex
+icon checkbox 
+
+Cash Collection
+Fragile
+Insurance
+ button change switch
+
+sidebar
+icons will be change
+
+Dashboard - admin-Account Summary-button date will be sorted
+piechart-styling hover effect will be add
+styling issue will be fix
+
+Settlement History
+font and styling issue will be fix
+
+Shipment Trend
+graph styling issue fixed
+thead styling and font-size,padding will be fixed
+
+Shipment
+Deliveries
+Delivery List-pagination row missing on top and bottom
+table design will be change
+table #cn on click will link on this url https://beta.blue-ex.com/detail?cn=5015906594
+status column will be change on button
+
+Pickup List
+data not available on page
+search bar is missing on heading row
+
+Multi Track
+only font will be change
+
+bulk import Upload Booking--UPLOAD SHIPMENTS-- font cosmetic changes
+lower row missing
+
+return request--Shipments with Return Requests--font size,css cosmetic changes
+RETURN REQUESTS
+RETURNED
+REATTEMPT REQUESTS
+RETURN SUMMARY 
+these all are tabs
+
+
+
+Shipments with Return Requests
+Return Requests List
+search bar missing
+pagination missing on top and bottom
+table design will be change
+
+Return Requests Approved refresh button
+table will be added
+
+
+Return Summary List - (Please Select Date to Check Return Summary)
+Select Date: icon will be added and working for date picker
+table should be visible
+
+Statements
+cod button should be clickable
+Select Date: May 18 - Aug 16 datepicker icon missing
+pagination will be appear on top and bottom
+STATEMENT LIST table design should be change
+styling also change
+
+Developer Center
+API Detail--- box shadow will be given and also clickable 
+OPEN API---
+OPEN API Detail
+
+Knowledge Base
+Frequently Asked Questions on left side searchbar should be visible
+--row should clickable 
+
+
+Account---Services----Tariff Rates---on leftside switch button should be added
+
+Manage Users----styling should be change
+
+
+Pickup Location List--- searchbar should be added
+table should be added
+pagination on bottom should be added

@@ -1,0 +1,46 @@
+.page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.page .pageRight {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  position: relative;
+}
+
+.page .pageRight main {
+  padding: 1.5rem 1.2rem;
+  margin-bottom: 4rem;
+}
+
+.page .pageRight main .heading {
+  margin: 0 0 1rem 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.55rem;
+  font-weight: 500;
+  color: #3f4047;
+}
+
+.page .pageRight main .cod {
+  background-color: #133BA0;
+  width: 5rem;
+  color: white;
+  font-size: 0.9rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 999px;
+  padding: 0.5rem;
+  margin-bottom: 2rem;
+}
+/*# sourceMappingURL=statements.module.css.map */

@@ -1,0 +1,89 @@
+$gray: #5e6383;
+.sidebar {
+    background-color: white;
+    min-height: 100vh;
+    min-width: 16rem;
+    font-size: 0.9rem;
+    color: $gray;
+    box-shadow: 0px 0px 2px 0px rgba(166,166,166,1);
+    position: relative;
+    z-index: 500;
+
+    .upper {
+        display: flex;
+        flex-direction: column;
+        
+        ul {
+            li {
+                padding: 0.5rem 1.5rem;
+                cursor: pointer;
+                background: white;
+               
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    list-style: circle;
+                    padding: 1rem;
+                    
+                    a {
+                        padding: 0.5rem;
+                    }
+                }
+            }
+            li:hover {
+                color: #0047ba;
+                background-color: #ebedf2;
+            }
+        }
+    }
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    .arrow {
+        transition: all 0.5s ease;
+        .MuiSvgIcon-root {
+            font-size: 0.8rem;
+        }
+    }
+    
+}
+.one {
+    display: flex;
+    align-items: center;
+
+    .icon {
+        margin-right: .8rem;
+    }
+}
+.blue {
+    background-color: #0047ba;
+    color: white;
+    border-radius: 999px;
+    margin: 1rem;
+    padding: 2rem; 
+    height: 3.5rem;
+}
+.blue:hover {
+    background-color: #133ba0 !important;
+    color: white !important;
+}
+
+.cancel {
+    flex-direction: row-reverse;
+    display: none;
+}
+
+@media(max-width: 1350px) {
+    .cancel {
+        display: flex;
+    }
+    .sidebar {
+        position: fixed;
+        top: 0;
+        z-index: 1000;
+    }
+}

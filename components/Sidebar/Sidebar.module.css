@@ -1,0 +1,155 @@
+.sidebar {
+  background-color: white;
+   min-height: 100vh;
+  /*min-width: 16rem; */
+  width:255px;
+  /* height: 365px; */
+  position: fixed;
+  font-size: 0.9rem;
+  color: #0047ba;
+  
+  /* color: #71737a; */
+  -webkit-box-shadow: 0px 0px 2px 0px #a6a6a6;
+          box-shadow: 0px 0px 2px 0px #a6a6a6;
+  position: relative;
+  z-index: 500;
+ 
+}
+
+.sidebar .upper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+       
+}
+
+.sidebar .upper ul li {
+  /* padding: 0.5rem 1.5rem; */
+  cursor: pointer;
+  padding: 15px 32px;
+  font-weight: 100;
+  font-size: 14px;
+ 
+
+}
+
+.sidebar .upper ul{
+    padding: 0;
+    width: 100%;
+    margin: 0;
+    list-style: none;
+  
+
+} 
+
+.sidebar .upper ul li ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style: circle;
+  padding: 1rem;
+ 
+}
+
+.sidebar .upper ul li ul a {
+  padding: 0.5rem;
+}
+
+.sidebar .upper ul li:hover {
+  color: #0047ba;
+  background-color: #ebedf2;
+ 
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+
+.flex .arrow {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.flex .arrow .MuiSvgIcon-root {
+  font-size: 0.8rem;
+}
+.flex .arrow img{
+  width:11px;
+  height: 11px;
+}
+.one {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+          color: #5e6383;
+  
+}
+
+.one .icon {
+  margin-right: .8rem;
+}
+.one .icon img{
+  width: 22px;
+  height: 22px;
+}
+
+.blue {
+  background-color: #0047ba;
+  color: white;
+  border-radius: 999px;
+  margin: 0px 1rem;
+  height: 3.1rem;
+  padding: 15px 20px!important;
+  margin: 7px 15px !important;
+  width: 226px;
+}
+
+.blue:hover {
+  background-color: #133ba0 !important;
+  color: white !important;
+}
+
+.cancel {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  display: none;
+}
+
+@media (max-width: 1350px) {
+  .cancel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .sidebar {
+    position: fixed;
+    top: 0;
+    z-index: 99999;
+  }
+}
+
+/*# sourceMappingURL=Sidebar.module.css.map */

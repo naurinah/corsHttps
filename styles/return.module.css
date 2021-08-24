@@ -1,0 +1,73 @@
+.return .page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.return .page .pageRight {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  position: relative;
+}
+
+.return .page .pageRight main {
+  padding: 1.5rem 1.2rem;
+  margin-bottom: 4rem;
+}
+
+.return .page .pageRight main .head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 2rem 0;
+}
+
+.return .page .pageRight main .head .inTransit {
+  background: #ffc212;
+  color: #fff;
+  padding: .6em 1.4em;
+  font-size: .85rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  margin-right: 1rem;
+}
+
+.return .page .pageRight main .head .heading {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.55rem;
+  font-weight: 500;
+  color: #3f4047;
+}
+
+.return .page .pageRight main .requestButtons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.return .page .pageRight main .requestButtons .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #333;
+  padding: .5rem 1rem;
+  border: 1px solid #dee2e6;
+  cursor: pointer;
+}
+
+.return .page .pageRight main .requestButtons .button .icon {
+  margin-right: 0.7rem;
+}
+
+.return .page .pageRight main .requestButtons .selected {
+  background-color: white;
+}
+/*# sourceMappingURL=return.module.css.map */

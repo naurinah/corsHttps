@@ -1,0 +1,49 @@
+.pickupLocation {
+    
+    .page {
+        display: flex;
+        width: 100%;
+        .pageRight {
+            flex: 1;
+            position: relative;
+
+            main {
+                padding: 1.5rem 1.2rem;
+                margin-bottom: 4rem;
+
+                .head {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin: 0 0 2rem 0;
+
+                    .heading {
+                        
+                        font-family: 'Roboto', sans-serif;
+                        font-size: 1.55rem;
+                        font-weight: 500;
+                        color: #3f4047;
+                    }
+                    button {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border: none;
+                        background-color: #0047ba;
+                        color: white;
+                        padding: 0.7rem 1.5rem;
+                        cursor: pointer;
+                        border-radius: 5px;
+                        font-size: 0.8rem;
+                    }
+                    button:hover {
+                        background-color: #133ba0;
+                    }
+                    button:focus {
+                        outline: none;
+                    }
+                }
+            }
+        }
+    }
+}

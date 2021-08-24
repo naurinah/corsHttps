@@ -1,0 +1,30 @@
+.search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+
+    .searchBar {
+        display: flex;
+        align-items: center;
+    }
+
+    .right {
+        button {
+            padding: .35rem 1.25rem;
+            font-size: .875rem;
+            line-height: 1.5;
+            border-radius: .2rem;
+            border: 1px solid #dedfe4;
+            background-color: white;
+            margin: 0.2rem;
+            transition: all 0.25s ease;
+        }
+        button:hover {
+            background-color: #ebedf2;
+        }
+        button:focus {
+            outline: none;
+        }
+    }
+}

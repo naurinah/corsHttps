@@ -1,0 +1,208 @@
+.summary {
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 2px 0px #a6a6a6;
+          box-shadow: 0px 0px 2px 0px #a6a6a6;
+  margin-right: 2rem;
+  -webkit-box-flex: 1.5;
+      -ms-flex: 1.5;
+          flex: 1.5;
+  position: relative;
+  flex: 0 0 58.33333%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 58.3333%;
+    max-width: 58.33333%;
+  
+}
+
+.summary .top {
+  padding: 15.4px 32px 15.4px 32px;
+  display: flex;
+  height: 65px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: baseline;
+  border-bottom: 1px solid #dfdfdf;
+ 
+}
+
+.summary .top h2 {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #3f4047;
+  display: table-cell;
+  vertical-align: middle;
+ 
+}
+
+.summary .top .topRight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.summary .top .topRight span {
+  margin-right: 1.3rem;
+}
+
+.summary .top .topRight .date {
+  color: #0047ba;
+}
+
+.summary .top .topRight button {
+  border: none;
+  background-color: #0047ba;
+  color: white;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.3rem;
+}
+
+.summary .top .topRight button:focus {
+  outline: none;
+}
+
+.summary .shipment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid #dfdfdf;
+  width: 100%;
+  line-height: 2;
+  font-size: 0.9rem;
+}
+
+.summary .shipment > div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 0.4rem;
+  padding-left: 2rem;
+  color: #0047ba;
+}
+
+.summary .shipment > div .no {
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+.summary .chartContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-height: 100rem;
+}
+
+.summary .chartContainer .chartBox {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.summary .chartContainer .chartBox > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+  height: 100%;
+}
+
+.summary .chartContainer .chartBox > div .pieBar {
+  width: 100%;
+  padding: 2rem;
+}
+
+.summary .chartContainer .chartBox > div .pie {
+  height: 20rem;
+  width: 100%;
+}
+
+.summary .chartContainer .chartBox > div .bars {
+  padding: 1rem;
+  width: 100%;
+}
+
+.summary .chartContainer .chartBox > div .bars .bar {
+  width: 100%;
+  padding: 1.1rem 0;
+
+}
+
+.summary .chartContainer .chartBox > div .bars .bar .val {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #6f727d;
+}
+
+.summary .chartContainer .chartBox > div .bars .bar .line {
+  width: 100%;
+  height: 0.7rem;
+  border-radius: 999px;
+  background-color: #e9ecef;
+}
+
+.summary .chartContainer .chartBox > div .bars .bar .line .linefill {
+  background-color: #b9d3b6;
+  height: 100%;
+  border-radius: 999px;
+}
+
+.summary .chartContainer .chartBox > div .bars .bar .name {
+  font-size: 13px;
+
+}
+
+@media (max-width: 1130px) {
+  .summary {
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .chartContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 800px) {
+  .chartContainer {
+    height: 100rem;
+  }
+  .chartBox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=SummaryCard.module.css.map */

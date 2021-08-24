@@ -1,0 +1,82 @@
+.GuideCard {
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 2px 0px #a6a6a6;
+          box-shadow: 0px 0px 2px 0px #a6a6a6;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-bottom: 2rem;
+}
+
+.GuideCard .top {
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.GuideCard .top h2 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #3f4047;
+}
+
+.GuideCard .data {
+  color: #575962;
+  padding: 2.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.GuideCard .data p {
+  font-weight: 500;
+}
+
+.GuideCard .data ul {
+  margin: 1rem 0;
+  margin-left: 3rem;
+  color: #575962;
+}
+
+.GuideCard .data ul li {
+  font-size: 0.9rem;
+}
+
+.GuideCard .data .text {
+  -webkit-box-flex: 1.5;
+      -ms-flex: 1.5;
+          flex: 1.5;
+  font-size: 0.9rem;
+  margin-right: 2rem;
+}
+
+.GuideCard .data .image {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.GuideCard .data .image img {
+  width: 100%;
+}
+
+@media (max-width: 750px) {
+  .GuideCard .data {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .GuideCard .data .text {
+    margin-bottom: 1rem;
+  }
+}
+/*# sourceMappingURL=GuideCard.module.css.map */

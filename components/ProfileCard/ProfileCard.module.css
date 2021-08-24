@@ -1,0 +1,173 @@
+.profileCard {
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 2px 0px #a6a6a6;
+          box-shadow: 0px 0px 2px 0px #a6a6a6;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-bottom: 2rem;
+  max-width: 90vw;
+}
+
+.profileCard .top {
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.profileCard .top h2 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #3f4047;
+}
+
+.profileCard .data {
+  color: #575962;
+  padding: 2.2rem;
+}
+
+.profileCard .data p {
+  font-weight: 500;
+}
+
+.profileCard .data ul {
+  margin: 1rem 0;
+  margin-left: 3rem;
+  color: #575962;
+}
+
+.profileCard .data ul li {
+  font-size: 0.9rem;
+}
+
+.profileCard .data form {
+  margin-left: 2rem;
+}
+
+.profileCard .data form .field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.profileCard .data form .field .label {
+  font-size: .9rem;
+  width: 15rem;
+}
+
+.profileCard .data form .field .input {
+  width: 22rem;
+}
+
+.profileCard .data form .field .input p {
+  font-size: 0.7rem;
+}
+
+.profileCard .data form input {
+  border: none;
+  border-radius: 5px;
+  border: none;
+  padding: 1rem 1.5rem;
+  margin: 1rem 0;
+  color: #91899f;
+  background: #f7f6f9;
+  font-size: .9rem;
+  width: 22rem;
+}
+
+.profileCard .data form input:focus {
+  outline: none;
+}
+
+.profileCard .data form .password {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.profileCard .data form .password input {
+  border: 1px solid #d6d6d6;
+  background-color: white;
+}
+
+.profileCard .data form .forget {
+  font-weight: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem 1.5rem;
+  font-weight: 700px;
+}
+
+.profileCard .data form .forget span {
+  display: block;
+  color: #0047ba;
+}
+
+.profileCard .data form button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  background-color: #0047ba;
+  color: white;
+  padding: 1rem 2.5rem;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-top: 2rem;
+}
+
+.profileCard .data form button:hover {
+  background-color: #133ba0;
+}
+
+.profileCard .data form button:focus {
+  outline: none;
+}
+
+@media (max-width: 560px) {
+  .profileCard .data form {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 470px) {
+  .profileCard .data form .password input {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=ProfileCard.module.css.map */

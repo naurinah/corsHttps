@@ -1,0 +1,59 @@
+.heading {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+  text-align: center;
+  margin-top: 1rem;
+}
+.desc {
+  display: flex;
+  flex-direction: column;
+  .row {
+    display: flex;
+    .col {
+      flex: 1;
+      display: flex;
+      margin: 1rem;
+      align-items: center;
+
+      label {
+        width: 8rem;
+        margin-right: 1rem;
+      }
+      select,
+      input {
+        width: 100%;
+        padding: 0.25rem 1rem;
+        font-size: 1rem;
+        line-height: 28px;
+        min-height: 37px;
+        color: #495057;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        border-radius: 0.25rem;
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+      }
+      select:focus , input:focus {
+          outline: none;
+          box-shadow: 0 0 3px #0047ba;
+      }
+    }
+    
+    button {
+        background-color: #0047ba;
+        color: white;
+        border: none;
+        cursor: pointer;
+        padding: .35rem 1.25rem;
+        font-size: .875rem;
+        line-height: 1.5;
+        border-radius: .2rem;
+    }
+    button:focus {
+        outline: none;
+    }
+  }
+}

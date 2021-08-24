@@ -1,0 +1,123 @@
+.servicesCard {
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 2px 0px #a6a6a6;
+          box-shadow: 0px 0px 2px 0px #a6a6a6;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-bottom: 2rem;
+  padding: 2rem;
+}
+
+.servicesCard .col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.servicesCard .col2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 2px solid #eaeaea;
+}
+
+.servicesCard .col2 .table .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 0.9rem;
+  color: #838383;
+}
+
+.servicesCard .col2 .table .row .one {
+  width: 4rem;
+  padding-right: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.servicesCard .col2 .table .row .two {
+  width: 10rem;
+  padding-right: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.servicesCard .col2 .table .row .three {
+  padding-right: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.servicesCard h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #575962;
+}
+
+.servicesCard button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  background-color: #0047ba;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-top: 2rem;
+}
+
+.servicesCard button:hover {
+  background-color: #133ba0;
+}
+
+.servicesCard button:focus {
+  outline: none;
+}
+
+.servicesCard p {
+  font-size: 0.9rem;
+  line-height: 22px;
+  color: #838383;
+  margin-bottom: 1rem;
+}
+
+.servicesCard .left {
+  width: 25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.servicesCard .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.servicesCard .right .rightLeft {
+  margin-right: 5rem;
+}
+
+.servicesCard .right img {
+  width: 2rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+/*# sourceMappingURL=CodShipment.module.css.map */
