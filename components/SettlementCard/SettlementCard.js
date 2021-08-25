@@ -28,14 +28,58 @@ const SettlementCard = (props) => {
     const getData = async () => {
         const response = await fetch(url);
         return await response.json()
-        .AllowAnyOrigin()
-        .AllowAnyMethod()
-        .AllowAnyHeader()
-        .AllowCredentials()
+        
     };
     const { data, error } = useSWR(url, getData)
 
-    
+    function OpenWindowWithPost(url, name, params) {
+        var form = document.createElement("form");
+        form.setAttribute("method", "post");
+        form.setAttribute("action", url);
+        form.setAttribute("target", name);
+        for (let i in params) {
+            if (params.hasOwnProperty(i)) {
+                let input = document.createElement('input');
+                input.type = 'hidden';
+                input.name = i;
+                input.value = params[i];
+                form.appendChild(input);
+            }
+        }
+        document.body.appendChild(form);
+        if (name == '_blank') {} else {
+            window.open("post.htm", name);
+        }
+        form.submit();
+        document.body.removeChild(form);
+    }
+    function OpenWindowWithPost(url, name, params) {
+        var form = document.createElement("form");
+        form.setAttribute("method", "post");
+        form.setAttribute("action", url);
+        form.setAttribute("target", name);
+        for (var i in params) {
+            if (params.hasOwnProperty(i)) {
+                var input = document.createElement('input');
+                input.type = 'hidden';
+                input.name = i;
+                input.value = params[i];
+                form.appendChild(input);
+            }
+        }
+        document.body.appendChild(form);
+        if (name == '_blank') {} else {
+            window.open("post.htm", name);
+        }
+        form.submit();
+        document.body.removeChild(form);
+    }
+    function statementView( FPS){
+        var FPSCODE =  FPS;
+        var param = {'FPS_CODE' : FPSCODE}
+        OpenWindowWithPost('http://benefitx.blue-ex.com/fnsum-cusprn.php', '_blank', param);
+     
+    }
 
     return ( 
         <div className={styles.settlement}>
@@ -74,7 +118,13 @@ const SettlementCard = (props) => {
                                             </TimelineSeparator>
                                         </TimelineItem>
                                 </>
-                                    <div className={styles.amount} style={{fontSize:"16px",paddingRight:"32px",paddingLeft:"20px"}}>RS. {d.CODAMOUNT}</div>
+                                    <div
+                                     className={styles.amount} 
+                                     style={{fontSize:"16px",paddingRight:"32px",paddingLeft:"20px"}}>
+                                    <a href="javascript:void(0);" 
+                                     onClick={() => {(statementView(d.CODAMOUNT));
+                                    }} 
+                                   >RS.{d.CODAMOUNT}</a> </div>
                                 </div>
                                 )
                                 

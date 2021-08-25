@@ -19,13 +19,14 @@
           justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center;
+          align-items:  flex-end;
+         
   border-bottom: 1px solid #dfdfdf;
 }
 
 .settlement .top h2 {
-  font-size: 1.3rem;
-  font-weight: 500;
+  font-size: 17px;
+  font-weight: 300;
   color: #3f4047;
 }
 

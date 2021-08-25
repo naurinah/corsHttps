@@ -26,7 +26,7 @@ const SummaryCard = () => {
     }
   }, [cookie]);
 
-  const url = "http://benefit.blue-ex.com/api/customerportal/shipmentgraph.php";
+  const url = `http://benefit.blue-ex.com/api/customerportal/shipmentgraph.php`;
   var formdata = new FormData();
   formdata.append(
     "request",
@@ -70,6 +70,14 @@ const SummaryCard = () => {
   useVisible(ref, () => {
     setDateDisplay("none");
   });
+  
+  function getStatusReport(e) {
+    let status = $(e).attr('data-status');
+    let startdate = $(e).attr('data-startdate');
+    let enddate = $(e).attr('data-enddate');
+    let param = {'status' : status, 'startdate':startdate, 'enddate': enddate};
+    OpenWindowWithPost('/deliveries', '_blank', param);
+}
 
   return (
     <div className={styles.summary}>
@@ -152,8 +160,8 @@ const SummaryCard = () => {
                           }}
                         ></div>
                       </div>
-                      <div className={styles.name}>
-                        <a href="/" target="_blank">
+                      <div className={styles.name} >
+                        <a href="/" target="_blank"  onClick={() => {(getStatusReport(this))}}  data-startdate="" data-enddate="" data-status="Accepted">
                           Accepted Shipments
                         </a>
                       </div>
@@ -218,6 +226,7 @@ const SummaryCard = () => {
                         displayType={"text"}
                         thousandSeparator={true}
                         decimalScale={2}
+                       
                       />
                     </div>
                     <div className={styles.name}>Shipments Accepted</div>

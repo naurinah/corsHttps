@@ -75,12 +75,7 @@ const StatementList = () => {
     const url =  `http://benefitx.blue-ex.com/api/customerportal/statement.php?acno=${ac}&hashkey=KaPdSgVkYp3s6v9y`;
     const getData = async () => {
         const response = await fetch(url);
-        return await response.json()
-        .AllowAnyOrigin()
-        .AllowAnyMethod()
-        .AllowAnyHeader()
-        .AllowCredentials()
-
+        return await response.json();
     };
     const { data, error } = useSWR(url, getData)
     const [loadTable, setLoadTable] = useState(false);

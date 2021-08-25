@@ -75,11 +75,8 @@ const ShipmentCard = () => {
   };
   const getData = async () => {
     const response = await fetch(url, requestOptions);
-    return await response.json()
-    .AllowAnyOrigin()
-    .AllowAnyMethod()
-    .AllowAnyHeader()
-    .AllowCredentials()
+    return await response.json();
+    console.log(response);
   };
 
   const { data, error } = useSWR(url, getData);

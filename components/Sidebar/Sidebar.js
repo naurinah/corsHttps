@@ -116,6 +116,7 @@ const Sidebar = () => {
                         </div>
 
                         <ul id="support" style={{display: "none"}}> 
+                      
                             <Link href="/developer-center">Developer Center</Link>
                             <Link href="/faqs">Knowledge Base</Link>
                             <Link href="/guides">Video Guides</Link>

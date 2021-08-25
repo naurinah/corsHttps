@@ -90,7 +90,7 @@ function EnhancedTableHead(props) {
   };
 
   return (
-    <TableHead>
+    <TableHead style={{background: "#d2d6e4"}}>
       <TableRow>
         <TableCell padding="checkbox">
           <Checkbox
@@ -103,7 +103,7 @@ function EnhancedTableHead(props) {
         {headCells.map((headCell) => (
           <TableCell
             key={headCell.id}
-            align={headCell.numeric ? "right" : "left"}
+            align={headCell.numeric ? "left" : "center"}
             padding={headCell.disablePadding ? "none" : "default"}
             sortDirection={orderBy === headCell.id ? order : false}
           >
@@ -489,7 +489,7 @@ export default function EnhancedTable() {
               size={dense ? "small" : "medium"}
               aria-label="enhanced table"
             >
-              <EnhancedTableHead
+              <EnhancedTableHead 
                 classes={classes}
                 numSelected={selected.length}
                 order={order}
@@ -497,6 +497,7 @@ export default function EnhancedTable() {
                 onSelectAllClick={handleSelectAllClick}
                 onRequestSort={handleRequestSort}
                 rowCount={rows.length}
+                
               />
               <TableBody>
                 {stableSort(originalRows, getComparator(order, orderBy))
@@ -536,7 +537,22 @@ export default function EnhancedTable() {
                         <TableCell align="right">{row.weight}</TableCell>
                         <TableCell align="right">{row.pieces}</TableCell>
                         <TableCell align="right">{row.fromTo}</TableCell>
-                        <TableCell align="right">{row.status}</TableCell>
+                        <TableCell align="right"><span 
+                        style= {{
+                          borderRadius:"30px" ,
+                          backgroundColor:"#0047ba",
+                          color:"white",
+                          padding:"5px",
+                          width:"112px",
+                          fontSize:"12px",
+                          cursor:"pointer",
+                          textAlign:"center",
+                          display:"flex",
+                          justifyContent:"center",
+                          alignItem:"center",
+                          flexWrap:"nowrap"
+                        }}>
+                          {row.status}</span></TableCell>
                         <TableCell
                           align="right"
                           style={{ position: "relative" }}
